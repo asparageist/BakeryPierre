@@ -2,7 +2,7 @@
 
 #### By Joseph Murray
 
-#### A console app that calculates the value of customer orders
+#### A console app that calculates the value of customer orders for loaves of bread or pastries
 
 ## Technologies Used
 
