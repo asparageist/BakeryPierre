@@ -3,7 +3,11 @@ using System;
 
 namespace Pierre.Models
 {
-  public class Unknown
+  public class BakeryOrder
   {
+    public static int BreadPrice(int input)
+    {
+      return input;
+    }
   }
 }
