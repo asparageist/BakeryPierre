@@ -4,7 +4,7 @@ using System.Linq;
 using Bakery.Models;
 
 
-namespace PierreGoods
+namespace Bakery.Models
 {
   class Program
   {
