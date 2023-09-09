@@ -9,5 +9,10 @@ namespace Pierre.Models
     {
       return input * 5;
     }
+
+    public static int PastryPrice(int input)
+    {
+      return input;
+    }
   }
 }
