@@ -12,7 +12,7 @@ namespace Pierre.Models
 
     public static int PastryPrice(int input)
     {
-      return input;
+      return input * 3;
     }
   }
 }
