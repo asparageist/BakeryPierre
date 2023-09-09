@@ -11,57 +11,42 @@ namespace Pierre.Tests
     [TestMethod]
     public void BakeryOrder_CalculateBread()
     {
-      //Arrange
-      BakeryOrder order = new BakeryOrder();
-      //Act
       int breadNumber = 2;
       int breadCost = BakeryOrder.BreadPrice(breadNumber);
-      //Assert
+
       Assert.AreEqual(breadCost, 10);
     }
     [TestMethod]
     public void BakeryOrder_CalculatePastry()
     {
-      //Arrange
-      BakeryOrder order = new BakeryOrder();
-      //Act
       int pastryNumber = 2;
       int pastryCost = BakeryOrder.PastryPrice(pastryNumber);
-      //Assert
+
       Assert.AreEqual(pastryCost, 6);
     }
     [TestMethod]
     public void BakeryOrder_BreadDiscount()
     {
-      //Arrange
-      BakeryOrder order = new BakeryOrder();
-      //Act
       int breadNumber = 6;
       int breadCost = BakeryOrder.BreadPrice(breadNumber);
-      //Assert
+
       Assert.AreEqual(breadCost, 20);
     }
     [TestMethod]
     public void BakeryOrder_PastryDiscount()
     {
-      //Arrange
-      BakeryOrder order = new BakeryOrder();
-      //Act
       int pastryNumber = 8;
       int pastryCost = BakeryOrder.PastryPrice(pastryNumber);
-      //Assert
+
       Assert.AreEqual(pastryCost, 18);
     }
     [TestMethod]
     public void BakeryOrder_BreadAndPastryCost()
     {
-      //Arrange
-      BakeryOrder order = new BakeryOrder();
-      //Act
       int breadNumber = 6;
       int pastryNumber = 8;
       int totalCost = BakeryOrder.TotalPrice(breadNumber, pastryNumber);
-      //Assert
+
       Assert.AreEqual(totalCost, 38);
     }
   }
