@@ -64,8 +64,5 @@ namespace Pierre.Tests
       //Assert
       Assert.AreEqual(totalCost, 38);
     }
-
-
-
   }
 }

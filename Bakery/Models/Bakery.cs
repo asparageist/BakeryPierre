@@ -21,7 +21,10 @@ namespace Pierre.Models
 
     public static int TotalPrice(int inputB, int inputP)
     {
-      return inputB;
+      int breadCost = BreadPrice(inputB);
+      int pastryCost = PastryPrice(inputP);
+      int totalCost = breadCost + pastryCost;
+      return totalCost;
     }
   }
 }
