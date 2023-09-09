@@ -50,8 +50,21 @@ namespace Pierre.Tests
       int pastryNumber = 8;
       int pastryCost = BakeryOrder.PastryPrice(pastryNumber);
       //Assert
-      Assert.AreEqual(pastryCost, 9);
+      Assert.AreEqual(pastryCost, 18);
     }
+    [TestMethod]
+    public void BakeryOrder_BreadAndPastryCost()
+    {
+      //Arrange
+      BakeryOrder order = new BakeryOrder();
+      //Act
+      int breadNumber = 6;
+      int pastryNumber = 8;
+      int totalCost = BakeryOrder.TotalPrice(breadNumber, pastryNumber);
+      //Assert
+      Assert.AreEqual(totalCost, 38);
+    }
+
 
 
   }

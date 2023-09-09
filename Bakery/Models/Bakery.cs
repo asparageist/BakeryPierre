@@ -14,7 +14,14 @@ namespace Pierre.Models
 
     public static int PastryPrice(int input)
     {
-      return input * 3;
+      int freePastry = (input / 4);
+      int totalPastryCost = (input * 3) - (freePastry * 3);
+      return totalPastryCost;
+    }
+
+    public static int TotalPrice(int inputB, int inputP)
+    {
+      return inputB;
     }
   }
 }
