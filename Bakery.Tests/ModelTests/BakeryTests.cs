@@ -14,10 +14,10 @@ namespace Pierre.Tests
       //Arrange
       BakeryOrder order = new BakeryOrder();
       //Act
-      int breadNumber = 3;
+      int breadNumber = 2;
       int breadCost = BakeryOrder.BreadPrice(breadNumber);
       //Assert
-      Assert.AreEqual(breadCost, 15);
+      Assert.AreEqual(breadCost, 10);
     }
     [TestMethod]
     public void BakeryOrder_CalculatePastry()
@@ -25,10 +25,10 @@ namespace Pierre.Tests
       //Arrange
       BakeryOrder order = new BakeryOrder();
       //Act
-      int pastryNumber = 3;
+      int pastryNumber = 2;
       int pastryCost = BakeryOrder.PastryPrice(pastryNumber);
       //Assert
-      Assert.AreEqual(pastryCost, 9);
+      Assert.AreEqual(pastryCost, 6);
     }
     [TestMethod]
     public void BakeryOrder_BreadDiscount()
