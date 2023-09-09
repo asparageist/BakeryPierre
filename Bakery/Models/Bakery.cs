@@ -15,7 +15,7 @@ namespace Pierre.Models
     public static int PastryPrice(int input)
     {
       int freePastry = (input / 4);
-      int totalPastryCost = (input * 3) - (freePastry * 3);
+      int totalPastryCost = (input * 2) - (freePastry * 2);
       return totalPastryCost;
     }
 

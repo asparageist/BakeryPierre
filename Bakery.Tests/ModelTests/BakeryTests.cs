@@ -22,7 +22,7 @@ namespace Pierre.Tests
       int pastryNumber = 2;
       int pastryCost = BakeryOrder.PastryPrice(pastryNumber);
 
-      Assert.AreEqual(pastryCost, 6);
+      Assert.AreEqual(pastryCost, 4);
     }
     [TestMethod]
     public void BakeryOrder_BreadDiscount()
@@ -38,7 +38,7 @@ namespace Pierre.Tests
       int pastryNumber = 8;
       int pastryCost = BakeryOrder.PastryPrice(pastryNumber);
 
-      Assert.AreEqual(pastryCost, 18);
+      Assert.AreEqual(pastryCost, 12);
     }
     [TestMethod]
     public void BakeryOrder_BreadAndPastryCost()
@@ -47,7 +47,7 @@ namespace Pierre.Tests
       int pastryNumber = 8;
       int totalCost = BakeryOrder.TotalPrice(breadNumber, pastryNumber);
 
-      Assert.AreEqual(totalCost, 38);
+      Assert.AreEqual(totalCost, 32);
     }
   }
 }

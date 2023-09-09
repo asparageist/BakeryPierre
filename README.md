@@ -6,7 +6,6 @@
 
 ## Technologies Used
 
-- HTML/CSS
 - Markdown
 - Github
 - C#
