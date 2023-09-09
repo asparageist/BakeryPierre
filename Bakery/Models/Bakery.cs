@@ -7,7 +7,7 @@ namespace Pierre.Models
   {
     public static int BreadPrice(int input)
     {
-      return input;
+      return input * 5;
     }
   }
 }
