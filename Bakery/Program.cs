@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Pierre.Models;
+using Bakery.Models;
 
 
-namespace Bakery.Models
+namespace Bakery
 {
   class Program
   {
@@ -14,13 +14,19 @@ namespace Bakery.Models
       Console.WriteLine("TODAY'S SPECIALS: Buy 2 loaves get one free!");
       Console.WriteLine("Buy 3 pastries get one free!");
       Console.WriteLine("How many loaves of bread do you want?");
-      int inputB = int.Parse(Console.ReadLine());
+      int loaves = int.Parse(Console.ReadLine());
       Console.WriteLine("How many pastries do you want?");
-      int inputP = int.Parse(Console.ReadLine());
+      int pastries = int.Parse(Console.ReadLine());
 
-      int totalCost = BakeryOrder.TotalPrice(inputB, inputP);
+      Bread newBread = new Bread();
+      Pastry newPastry = new Pastry();
+
+      int breadCost = newBread.BreadPrice(loaves);
+      int pastryCost = newPastry.PastryPrice(pastries);
+      int totalCost = breadCost + pastryCost;
 
       Console.WriteLine($"Your total comes to ${totalCost}");
+
     }
   }
 }
